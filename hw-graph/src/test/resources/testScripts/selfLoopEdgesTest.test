@@ -1,0 +1,26 @@
+# Test edges with 2 + self loop edges but with different labels
+
+
+# Create a graph
+CreateGraph graph1
+
+# Add nodes A
+AddNode graph1 A
+
+# add an edge from A -> A (e1), A -> A (e2) and A -> A (e3)
+AddEdge graph1 A A e1
+AddEdge graph1 A A e2
+AddEdge graph1 A A e3
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+ListNodes graph1
+ListChildren graph1 A
+
+# Add a duplicate edge from A to A with label
+AddEdge graph1 A A e1
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+#Duplicate edges shouldn't modify the graph
+ListNodes graph1
+ListChildren graph1 A
+

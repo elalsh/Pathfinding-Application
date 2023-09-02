@@ -1,0 +1,19 @@
+# Tests multiple graph creation
+
+# Create a graph
+created graph graph1
+
+# Add nodes A to graph1
+added node A to graph1
+
+# Create another graph
+created graph graph2
+
+added node B to graph2
+added node C to graph2
+
+added node D to graph1
+
+# Print the nodes in the graph1 and graph2
+graph1 contains: A D
+graph2 contains: B C

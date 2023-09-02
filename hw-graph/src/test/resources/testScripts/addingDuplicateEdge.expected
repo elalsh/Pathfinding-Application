@@ -1,0 +1,27 @@
+# The expected number of edges should stay the same since the edge added is duplicate
+
+# Create a graph
+created graph graph1
+
+# Add nodes A, B, C and D
+added node A to graph1
+added node B to graph1
+added node C to graph1
+added node D to graph1
+
+# add an edge from A -> B and C -> D
+added edge edgeAB from A to B in graph1
+added edge edgeCD from C to D in graph1
+
+# Print the nodes in the graph and the outgoing edges for src nodes
+graph1 contains: A B C D
+the children of A in graph1 are: B(edgeAB)
+the children of C in graph1 are: D(edgeCD)
+
+# Add a duplicate edge into the graph
+added edge edgeAB from A to B in graph1
+
+# Print the nodes in the graph after adding the duplicate edge
+graph1 contains: A B C D
+the children of A in graph1 are: B(edgeAB)
+the children of C in graph1 are: D(edgeCD)

@@ -1,0 +1,10 @@
+# The expected value is the for graph to have 1 node
+
+# Create a graph
+created graph graph1
+
+# Add node single node n1 to the graph
+added node n1 to graph1
+
+# Print the node in the graph
+graph1 contains: n1

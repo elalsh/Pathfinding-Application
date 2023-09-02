@@ -1,0 +1,28 @@
+#Tests island graphs, graphs with most of the vertexes not having neighbors
+
+# Create a graph
+created graph graph1
+
+# Add nodes A, B, C, D, E, F, G
+added node A to graph1
+added node B to graph1
+added node C to graph1
+added node D to graph1
+added node E to graph1
+added node F to graph1
+added node G to graph1
+
+# add an edge from A -> B and C -> D
+added edge edgeAB from A to B in graph1
+added edge edgeCD from C to D in graph1
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+graph1 contains: A B C D E F G
+the children of A in graph1 are: B(edgeAB)
+the children of B in graph1 are:
+the children of C in graph1 are: D(edgeCD)
+the children of D in graph1 are:
+the children of E in graph1 are:
+the children of F in graph1 are:
+the children of G in graph1 are:
+

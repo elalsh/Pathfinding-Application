@@ -1,0 +1,15 @@
+# Tests adding a an a single directed edge to the graph
+
+# Create a graph
+created graph graph1
+
+# Add a pair of nodes
+added node A to graph1
+added node B to graph1
+
+# Add an edge
+added edge edgeAB from A to B in graph1
+
+# Print the nodes in the graph and the outgoing edges from n1
+graph1 contains: A B
+the children of A in graph1 are: B(edgeAB)

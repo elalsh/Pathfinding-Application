@@ -1,0 +1,17 @@
+# Tests adding duplicate node to the graph
+
+# Create a graph
+created graph graph1
+
+# Add a pair of nodes A and B
+added node A to graph1
+added node B to graph1
+
+# Print the nodes in the graph
+graph1 contains: A B
+
+# Add duplicate node
+added node B to graph1
+
+# Print the nodes in the graph
+graph1 contains: A B

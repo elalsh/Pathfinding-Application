@@ -1,0 +1,20 @@
+# Tests 2 nodes with multiple edges  but with different labels
+
+# Create a graph
+created graph graph1
+
+# Add nodes A
+added node A to graph1
+added node B to graph1
+
+# Add an edges to the graph
+added edge e1 from A to B in graph1
+added edge e2 from A to B in graph1
+added edge e3 from A to B in graph1
+added edge e4 from B to A in graph1
+added edge e5 from B to A in graph1
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+graph1 contains: A B
+the children of A in graph1 are: B(e1) B(e2) B(e3)
+the children of B in graph1 are: A(e4) A(e5)

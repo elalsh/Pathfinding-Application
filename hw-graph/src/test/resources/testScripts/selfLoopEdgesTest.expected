@@ -1,0 +1,25 @@
+# Test edges with 2 + self loop edges but with different labels
+
+
+# Create a graph
+created graph graph1
+
+# Add nodes A
+added node A to graph1
+
+# add an edge from A -> A (e1), A -> A (e2) and A -> A (e3)
+added edge e1 from A to A in graph1
+added edge e2 from A to A in graph1
+added edge e3 from A to A in graph1
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+graph1 contains: A
+the children of A in graph1 are: A(e1) A(e2) A(e3)
+
+# Add a duplicate edge from A to A with label
+added edge e1 from A to A in graph1
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+#Duplicate edges shouldn't modify the graph
+graph1 contains: A
+the children of A in graph1 are: A(e1) A(e2) A(e3)

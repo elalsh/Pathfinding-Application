@@ -1,0 +1,19 @@
+# Tests multiple graph creation
+
+# Create a graph
+CreateGraph graph1
+
+# Add nodes A to graph1
+AddNode graph1 A
+
+# Create another graph
+CreateGraph graph2
+
+AddNode graph2 B
+AddNode graph2 C
+
+AddNode graph1 D
+
+# Print the nodes in the graph1 and graph2
+ListNodes graph1
+ListNodes graph2

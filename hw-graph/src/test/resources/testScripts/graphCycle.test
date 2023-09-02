@@ -1,0 +1,23 @@
+# Tests a cycle with 4 nodes in the graph
+
+# Create a graph
+CreateGraph graph1
+
+# Add nodes A, B, C and D
+AddNode graph1 A
+AddNode graph1 B
+AddNode graph1 C
+AddNode graph1 D
+
+# add an edges to the Graph
+AddEdge graph1 A B e1
+AddEdge graph1 B C e2
+AddEdge graph1 C D e3
+AddEdge graph1 D A e4
+
+# Print the nodes in the graph and the outgoing edges from A, B, C, D
+ListNodes graph1
+ListChildren graph1 A
+ListChildren graph1 B
+ListChildren graph1 C
+ListChildren graph1 D

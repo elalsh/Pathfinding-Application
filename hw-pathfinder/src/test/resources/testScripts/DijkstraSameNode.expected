@@ -1,0 +1,14 @@
+# Find a path with Dijkstra's algorithm when
+# src and dest node are the same.
+
+created graph simpleGraph
+
+added node A to simpleGraph
+added node B to simpleGraph
+
+added edge 10.000 from A to B in simpleGraph
+added edge 1.000 from A to B in simpleGraph
+added edge 50.000 from A to A in simpleGraph
+
+path from A to A:
+total cost: 0.000

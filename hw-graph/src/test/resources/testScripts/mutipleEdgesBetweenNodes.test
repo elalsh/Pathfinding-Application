@@ -1,0 +1,20 @@
+# Tests 2 nodes with multiple edges  but with different labels
+
+# Create a graph
+CreateGraph graph1
+
+# Add nodes A
+AddNode graph1 A
+AddNode graph1 B
+
+# Add an edges to the graph
+AddEdge graph1 A B e1
+AddEdge graph1 A B e2
+AddEdge graph1 A B e3
+AddEdge graph1 B A e4
+AddEdge graph1 B A e5
+
+# Print the nodes in the graph and the outgoing edges for src nodes to dest nodes
+ListNodes graph1
+ListChildren graph1 A
+ListChildren graph1 B

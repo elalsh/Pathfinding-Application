@@ -1,0 +1,67 @@
+## CSE 331 HW6 Questions
+
+NOTE: This file is used as part of HW6, and is not due as part of the HW5
+submission. You may leave it blank for HW5.
+
+## Part 1
+###########################################################################
+
+A few examples of possible Graph representations:
+
+    A: A collection of nodes and a collection of edges.
+    B: An adjacency list, in which each node is associated with a list of its outgoing edges.
+    C: An adjacency matrix, which explicitly represents, for every pair ⟨A,B⟩ of nodes, whether there 
+       is a link from A to B, and how many.
+
+1. In two or three sentences, explain an advantage and a disadvantage of each of the
+representations listed above (for example, in terms of runtime complexity, space
+complexity, or ease of implementation).
+
+   Advantages:
+            A: Follows from definition of graph, collections of vertices and edges. Allows you to access the vertices
+            and edges as a collection, so you can perform operation on them.
+            B: Allows you to find the children of the vertex pretty fast, in constant time. It is also
+                space efficient since most graphs are sparse
+            C: Allows you to add edges between 2 nodes easily in constant time. It also allows you to check
+               if edges exists between two nodes in constant time.
+
+   Disadvantages:
+            A: Finding removing a vertex can be cost since you have to iterate through all the
+               Edge collections to remove edges from and to the vertex. It can take a lot of space
+            B: It's slow to remove vertexes and edges since it needs to find all the vertices or edges.
+            C: It's not space efficient if the graph is parse which most graphs aren't. It can also
+               be slow to add/remove vertices and edges.
+
+
+2. In two to three sentences, describe the representation you chose and explain why you
+chose it. If you chose to use a different representation than one of the three we described
+above, be sure to list its advantages and disadvantages, too.
+
+I choose the adjacency list representation since it is the most space efficient and is faster to implement
+some functions like add vertex/edge and removing an edge. It is also the most useful since our graph
+will be sparse.
+
+
+## Part 4
+###########################################################################
+
+    (Please keep your answers brief and to-the-point.)
+
+1. Describe any new tests you added and why you added them, or why you feel that your original
+tests alone are sufficient.
+
+I deleted some tests for exception since I removed it from the spec. I had both
+requires not null and throws clause for null parameters and decided to keep only the spec. Requires clause.
+I didn't add any test script or Junit since I think I already included tests for edge cases and
+different types of graphs and also functions I didn't test on the test script.
+
+2. Did you make any changes to your specifications as you were implementing your Graph? (yes/no)
+If yes, describe your changes and why you made them.
+
+yes
+I added modifies to methods that modify the graph which I didn't include for hw 5. I also removed
+the throws clause from all the methods since spec.requires includes != null. I says not to include
+ on the feedback of hw 5. I also added a public Node class which I first intended to be private.
+ I needed to access the children nodes with label, so I decided to make the class public to
+ return it as list of List<Node>.
+

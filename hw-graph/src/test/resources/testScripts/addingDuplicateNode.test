@@ -1,0 +1,17 @@
+# Tests adding duplicate node to the graph
+
+# Create a graph
+CreateGraph graph1
+
+# Add a pair of nodes A and B
+AddNode graph1 A
+AddNode graph1 B
+
+# Print the nodes in the graph
+ListNodes graph1
+
+# Add duplicate node
+AddNode graph1 B
+
+# Print the nodes in the graph
+ListNodes graph1
